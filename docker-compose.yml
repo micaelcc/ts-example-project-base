@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: nodeproj
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: nodeproj
+      POSTGRES_PASSWORD: nodeproj
+      POSTGRES_DB: nodeproj
+    ports:
+      - "5437:5432"
